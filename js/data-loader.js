@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const rawSocial = localStorage.getItem('dnpSocialData');
-    let waPhone = "94771234567";
+    let waPhone = "94763971044";
     let waLink = `https://wa.me/${waPhone}?text=Hello! I would like to request a Tour Package.`;
 
     if (rawSocial) {
