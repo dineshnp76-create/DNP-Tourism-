@@ -1,9 +1,9 @@
 // Default Contact Data
 const defaultContactData = {
-    phone1: "+94 77 123 4567",
-    phone2: "+94 11 987 6543",
-    email1: "info@dnptourism.com",
-    email2: "bookings@dnptourism.com",
+    phone1: "+94 76 397 1044",
+    phone2: "+94 77 382 3101",
+    email1: "Dnptourismhub@gmail.com",
+    email2: "Dnptourismhub@gmail.com",
     address: "Level 5, World Trade Center, Colombo 01, Sri Lanka"
 };
 
