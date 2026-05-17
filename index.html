@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNP Tourism & Travel Hub | Luxury Sri Lanka Tours</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#d4af37',
+                        goldDark: '#aa8529',
+                        brandBlue: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 text-white px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/logo.PNG" alt="DNP Tourism Logo"
+                    class="h-12 md:h-16 object-contain drop-shadow-md">
+                <div class="flex flex-col justify-center">
+                    <span
+                        class="logo-text font-playfair text-2xl md:text-3xl font-black tracking-widest uppercase leading-none"
+                        style="color: #0f172a;">DNP</span>
+                    <span
+                        class="logo-text text-[9px] sm:text-[10px] font-bold tracking-[0.25em] uppercase text-gray-500 mt-1 leading-none">Tourism
+                        & Travel Hub</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-widest font-semibold">
+                <a href="index.html" class="text-gold border-b-2 border-gold pb-1">Home</a>
+                <a href="destinations.html" class="hover:text-gold transition-colors pb-1">Destinations</a>
+                <a href="packages.html" class="hover:text-gold transition-colors pb-1">Packages</a>
+                <a href="services.html" class="hover:text-gold transition-colors pb-1">Services</a>
+                <a href="about.html" class="hover:text-gold transition-colors pb-1">About Us</a>
+                <a href="contact.html" class="hover:text-gold transition-colors pb-1">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-brandBlue shadow-lg border-t border-gray-700">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="text-gold font-semibold uppercase tracking-widest">Home</a>
+                <a href="destinations.html"
+                    class="text-white hover:text-gold uppercase tracking-widest">Destinations</a>
+                <a href="packages.html" class="text-white hover:text-gold uppercase tracking-widest">Packages</a>
+                <a href="services.html" class="text-white hover:text-gold uppercase tracking-widest">Services</a>
+                <a href="about.html" class="text-white hover:text-gold uppercase tracking-widest">About Us</a>
+                <a href="contact.html" class="text-white hover:text-gold uppercase tracking-widest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center bg-fixed-parallax"
+        style="background-image: url('assets/images/hero_bg.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20" data-aos="fade-up">
+            <h2 class="text-gold tracking-[0.2em] uppercase text-sm md:text-base font-semibold mb-4">Welcome to Sri
+                Lanka</h2>
+            <h1 class="font-playfair text-5xl md:text-7xl text-white font-bold mb-6 leading-tight">Discover the Pearl of
+                the <span class="focus-text block mt-2">Indian Ocean</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 font-light">Experience the ultimate luxury travel with DNP
+                Tourism & Travel Hub.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="destinations.html"
+                    class="btn-gold px-8 py-4 rounded-full text-lg uppercase tracking-wide font-medium">Explore
+                    Destinations</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <h3 class="text-gold text-sm tracking-widest uppercase font-bold mb-3">About DNP Tourism</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-brandBlue mb-6">Crafting Unforgettable <br>
+                    Sri Lankan Journeys</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    At DNP Tourism & Travel Hub, we don't just organize tours; we curate highly personalized, luxury
+                    experiences that unveil the true magic of Sri Lanka. From golden beaches to misty tea mountains,
+                    ancient ruins to vibrant wildlife, our expert team ensures an unparalleled journey.
+                </p>
+                <div class="flex gap-6 mb-8 text-brandBlue font-semibold">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Luxury Resorts
+                    </div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Private Transport
+                    </div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Tailored
+                        Itineraries</div>
+                </div>
+                <a href="about.html"
+                    class="inline-flex items-center gap-2 text-brandBlue font-semibold uppercase tracking-widest hover:text-gold transition border-b-2 border-brandBlue hover:border-gold pb-1">
+                    Read More About Us <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 relative" data-aos="fade-left">
+                <div class="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl img-hover">
+                    <img src="assets/images/yala_safari.png" alt="Leopard Safari in Yala"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                        <h4 class="text-white font-playfair text-2xl font-bold">Wildlife Safaris</h4>
+                    </div>
+                </div>
+                <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl glass z-10 hidden md:block">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-16 h-16 bg-goldDark rounded-full flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 font-semibold uppercase">5-Star Tours</p>
+                            <p class="font-playfair text-xl font-bold">Premium Quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-gold text-sm tracking-widest uppercase font-bold mb-3">Popular Locations</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-brandBlue">Featured Destinations</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 overflow-hidden relative img-hover">
+                        <img src="assets/images/ella_train.png" alt="Ella Train" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            Top Choice</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-3">
+                            <h4
+                                class="font-playfair text-2xl font-bold text-brandBlue group-hover:text-gold transition">
+                                Ella & Hill Country</h4>
+                        </div>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">Experience the breathtaking views from the
+                            famous Nine Arches Bridge and immerse yourself in the lush tea plantations of Ceylon.</p>
+                        <a href="destinations.html"
+                            class="text-sm font-semibold uppercase tracking-widest text-brandBlue hover:text-gold transition">Explore
+                            <i class="fa-solid fa-long-arrow-alt-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 overflow-hidden relative img-hover">
+                        <img src="assets/images/mirissa_beach.png" alt="Mirissa Beach"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h4
+                            class="font-playfair text-2xl font-bold text-brandBlue group-hover:text-gold transition mb-3">
+                            Mirissa Beaches</h4>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">Relax on golden sands and enjoy luxury
+                            seaside resorts. Famous for whale watching and vibrant surf culture.</p>
+                        <a href="destinations.html"
+                            class="text-sm font-semibold uppercase tracking-widest text-brandBlue hover:text-gold transition">Explore
+                            <i class="fa-solid fa-long-arrow-alt-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 overflow-hidden relative img-hover">
+                        <img src="assets/images/hero_bg.png" alt="Sigiriya" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h4
+                            class="font-playfair text-2xl font-bold text-brandBlue group-hover:text-gold transition mb-3">
+                            Ancient Sigiriya</h4>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">Explore the 8th wonder of the world. A
+                            massive column of rock housing an ancient palace complex with stunning frescoes.</p>
+                        <a href="destinations.html"
+                            class="text-sm font-semibold uppercase tracking-widest text-brandBlue hover:text-gold transition">Explore
+                            <i class="fa-solid fa-long-arrow-alt-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="destinations.html"
+                    class="inline-block border-2 border-brandBlue text-brandBlue px-8 py-3 rounded-full font-semibold uppercase tracking-wider hover:bg-brandBlue hover:text-white transition">View
+                    All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ceylon Highlights Section -->
+    <section class="py-24 bg-white relative overflow-hidden border-t border-gray-100">
+        <div
+            class="absolute top-0 right-0 w-64 h-64 bg-gold opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-bold tracking-[0.25em] uppercase text-sm">Discover The Magic</span>
+                <h2
+                    class="font-playfair text-5xl md:text-6xl font-bold text-brandBlue mt-2 mb-6 uppercase tracking-widest">
+                    Ceylon</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Immerse yourself in the breathtaking beauty, rich
+                    heritage, and mouth-watering culinary wonders of Sri Lanka.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Tourist Places -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-2xl h-[400px]" data-aos="fade-right">
+                    <img src="assets/images/tourist_places.png" alt="Beautiful Tourist Places in Sri Lanka"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brandBlue via-brandBlue/50 to-transparent opacity-90 group-hover:opacity-100 transition duration-500">
+                    </div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i
+                            class="fa-solid fa-map-location-dot text-4xl text-gold mb-4 transform -translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500"></i>
+                        <h3 class="font-playfair text-3xl font-bold text-white mb-3 tracking-wide">Beautiful Tourist
+                            Places</h3>
+                        <p class="text-gray-300 mb-6 line-clamp-3 leading-relaxed">From the ancient rock fortress of
+                            Sigiriya to the misty tea-covered hills of Ella and the pristine southern beaches, explore
+                            the iconic landmarks that make Ceylon unforgettable.</p>
+                        <a href="destinations.html"
+                            class="inline-flex items-center text-gold font-bold uppercase tracking-widest text-sm hover:text-white transition group-hover:translate-x-2 duration-300">
+                            Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cuisine -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-2xl h-[400px]" data-aos="fade-left">
+                    <img src="assets/images/tasty_cuisine.png" alt="Sri Lankan Cuisine"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brandBlue via-brandBlue/50 to-transparent opacity-90 group-hover:opacity-100 transition duration-500">
+                    </div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i
+                            class="fa-solid fa-utensils text-4xl text-gold mb-4 transform -translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500"></i>
+                        <h3 class="font-playfair text-3xl font-bold text-white mb-3 tracking-wide">Sri Lankan Cuisine
+                            (Tasty Food)</h3>
+                        <p class="text-gray-300 mb-6 line-clamp-3 leading-relaxed">Embark on a culinary journey filled
+                            with aromatic spices, rich curries, fresh seafood, and world-renowned Ceylon tea. Taste the
+                            authentic flavors of paradise.</p>
+                        <a href="cuisine.html"
+                            class="inline-flex items-center text-gold font-bold uppercase tracking-widest text-sm hover:text-white transition group-hover:translate-x-2 duration-300">
+                            Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-gold text-sm tracking-widest uppercase font-bold mb-3">Testimonials</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-brandBlue">What Our Guests Say</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow relative"
+                    data-aos="fade-up">
+                    <div
+                        class="absolute -top-6 left-8 bg-gold text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-lg">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="flex text-gold text-sm mb-4 mt-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic text-sm leading-relaxed">"An unforgettable experience! From the
+                        moment we landed, DNP Tourism handled everything perfectly. The luxury glamping in Yala was out
+                        of this world."</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <h4 class="font-bold text-brandBlue">Sarah Jenkins</h4>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">United Kingdom</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow relative"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute -top-6 left-8 bg-gold text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-lg">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="flex text-gold text-sm mb-4 mt-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic text-sm leading-relaxed">"We requested a tailor-made honeymoon
+                        package and they over-delivered. Best 5-star hotels, highly professional driver, and absolute
+                        VIP treatment."</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <h4 class="font-bold text-brandBlue">Mark & Lisa</h4>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Australia</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow relative"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute -top-6 left-8 bg-gold text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-lg">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="flex text-gold text-sm mb-4 mt-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic text-sm leading-relaxed">"The attention to detail is
+                        spectacular. Sri Lanka is breathtaking, but having an agency like DNP makes the whole trip
+                        seamless and stress-free."</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <h4 class="font-bold text-brandBlue">David W.</h4>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">United States</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-20 relative bg-brandBlue text-white"
+        style="background-image: url('assets/images/mirissa_beach.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="absolute inset-0 bg-brandBlue opacity-80"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center" data-aos="zoom-in">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-6">Ready for the Vacation of a Lifetime?</h2>
+            <p class="text-lg text-gray-300 mb-8">Contact DNP Tourism & Travel Hub today to start planning your perfect
+                tropical getaway to Sri Lanka.</p>
+            <a href="https://wa.me/94771234567" target="_blank"
+                class="bg-green-500 hover:bg-green-600 px-10 py-4 rounded-full text-lg uppercase tracking-wide font-medium shadow-xl inline-block transition"><i
+                    class="fa-brands fa-whatsapp mr-2"></i>Request Package via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-3 mb-6">
+                    <img src="assets/images/logo.PNG" alt="DNP Logo" class="h-16 object-contain drop-shadow-lg">
+                    <div class="flex flex-col justify-center text-left">
+                        <span
+                            class="font-playfair text-2xl font-bold text-white tracking-widest uppercase leading-none">DNP</span>
+                        <span
+                            class="text-[9px] font-bold tracking-[0.25em] uppercase text-gray-400 mt-1 leading-none">Tourism
+                            & Travel Hub</span>
+                    </div>
+                </a>
+                <p class="text-sm mb-6">Experience the beautiful island of Sri Lanka with our premium luxury travel and
+                    tourism packages. We are your trusted travel hub.</p>
+                <div class="flex gap-4">
+                    <a id="link-facebook" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a id="link-instagram" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a id="link-twitter" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a id="link-whatsapp" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a id="link-linkedin" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                    <li><a href="destinations.html" class="hover:text-gold transition">Destinations</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">CEYLON</h4>
+                <ul class="space-y-3">
+                    <li><a href="destinations.html" class="hover:text-gold transition">Beautiful Tourist Places</a></li>
+                    <li><a href="packages.html" class="hover:text-gold transition">Sri Lankan Cuisine (Tasty Food)</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="hover:text-gold transition text-sm italic border-b border-gray-700 pb-1 mt-2 inline-block">Read
+                            More <i class="fa-solid fa-arrow-right text-xs ml-1"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">Contact Info</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-gold"></i>
+                        <span class="dyn-address">Colombo, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-gold"></i>
+                        <span class="dyn-phone1">+94 77 123 4567</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-gold"></i>
+                        <span class="dyn-email1">info@dnptourism.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 md:px-12 mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; <span id="current-year"></span> DNP Tourism & Travel Hub. All rights reserved.</p>
+            <p>Designed with luxury in mind.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

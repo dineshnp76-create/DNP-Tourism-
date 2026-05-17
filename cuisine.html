@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lankan Cuisine | DNP Tourism & Travel Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        gold: '#d4af37',
+                        goldDark: '#aa8529',
+                        brandBlue: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 text-white px-6 md:px-12 nav-scrolled"
+        style="background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/logo.PNG" alt="DNP Tourism Logo"
+                    class="h-12 md:h-16 object-contain drop-shadow-md">
+                <div class="flex flex-col justify-center">
+                    <span
+                        class="logo-text font-playfair text-2xl md:text-3xl font-black tracking-widest uppercase leading-none"
+                        style="color: #0f172a;">DNP</span>
+                    <span
+                        class="logo-text text-[9px] sm:text-[10px] font-bold tracking-[0.25em] uppercase text-gray-500 mt-1 leading-none">Tourism
+                        & Travel Hub</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Home</a>
+                <a href="destinations.html"
+                    class="hover:text-gold transition-colors pb-1 text-brandBlue">Destinations</a>
+                <a href="packages.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Packages</a>
+                <a href="services.html" class="text-gold border-b-2 border-gold pb-1 text-brandBlue">Services</a>
+                <a href="about.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">About Us</a>
+                <a href="contact.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden text-2xl focus:outline-none"
+                style="color: #0f172a;">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-brandBlue shadow-lg border-t border-gray-700">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="text-white hover:text-gold uppercase tracking-widest">Home</a>
+                <a href="destinations.html"
+                    class="text-white hover:text-gold uppercase tracking-widest">Destinations</a>
+                <a href="packages.html" class="text-white hover:text-gold uppercase tracking-widest">Packages</a>
+                <a href="services.html" class="text-gold font-semibold uppercase tracking-widest">Services</a>
+                <a href="about.html" class="text-white hover:text-gold uppercase tracking-widest">About Us</a>
+                <a href="contact.html" class="text-white hover:text-gold uppercase tracking-widest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-32 bg-brandBlue mt-20 relative">
+        <div
+            class="absolute inset-0 bg-[url('assets/images/tasty_cuisine.png')] bg-cover bg-center bg-no-repeat opacity-20 hover:scale-105 transition duration-1000">
+        </div>
+        <div class="max-w-4xl mx-auto text-center px-6 relative z-10" data-aos="fade-up">
+            <h1 class="font-playfair text-5xl md:text-6xl text-white font-bold mb-4">Sri Lankan Cuisine</h1>
+            <p class="text-gold text-lg uppercase tracking-widest font-bold">A Tasty Journey of Spices & Flavors</p>
+        </div>
+    </section>
+
+    <!-- Cuisine Details Section -->
+    <section class="py-24 max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+            <div data-aos="fade-right">
+                <h3 class="text-gold text-lg font-bold tracking-widest uppercase mb-2">Our Culinary Heritage</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-brandBlue mb-6">A Taste of Paradise</h2>
+                <div class="w-16 h-1 bg-gold mb-8"></div>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Sri Lankan cuisine is globally renowned for its deeply aromatic spices, incredibly vibrant dishes,
+                    and deeply rooted culinary heritage. Influenced by centuries of maritime trade, local indigenous
+                    traditions, and a tropical climate, the island's food offers a tantalizing combination of sweet,
+                    sour, salty, and exquisitely spicy notes.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    At DNP Tourism, we ensure your luxury vacation is accompanied by unforgettable dining experiences.
+                    From indulging in fresh Indian Ocean seafood curries to sipping the world's finest hand-plucked
+                    Ceylon tea in misty mountain resorts, every meal is an adventure.
+                </p>
+                <a href="contact.html"
+                    class="bg-gold hover:bg-goldDark text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest transition shadow-lg inline-block">Experience
+                    Food Tours</a>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]" data-aos="fade-left">
+                <img src="assets/images/tasty_cuisine.png" alt="Sri Lankan Cuisine" class="w-full h-full object-cover">
+                <div class="absolute inset-0 border-8 border-white/20 m-4 rounded-xl"></div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Feature 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-gold text-center group hover:-translate-y-2 transition duration-300"
+                data-aos="fade-up" data-aos-delay="100">
+                <div
+                    class="w-20 h-20 bg-brandBlue text-gold rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+                <h3 class="font-playfair text-2xl font-bold text-brandBlue mb-4">Rice & Curry</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">The staple meal consisting of fluffy rice served with a
+                    robust selection of meat, fish, and rich vegetable/lentil curries cooked in creamy coconut milk.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-brandBlue text-center group hover:-translate-y-2 transition duration-300"
+                data-aos="fade-up" data-aos-delay="200">
+                <div
+                    class="w-20 h-20 bg-gold text-white rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <h3 class="font-playfair text-2xl font-bold text-brandBlue mb-4">Finest Ceylon Tea</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Discover authentic mountain-grown tea, visiting high
+                    altitude luxury estates where you can taste pure organic brews straight from the source.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-gold text-center group hover:-translate-y-2 transition duration-300"
+                data-aos="fade-up" data-aos-delay="300">
+                <div
+                    class="w-20 h-20 bg-brandBlue text-gold rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-fish"></i>
+                </div>
+                <h3 class="font-playfair text-2xl font-bold text-brandBlue mb-4">Fresh Catch Seafood</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Taste gigantic Indian Ocean crabs, massive prawns, and
+                    exotic lagoon fish crafted to perfection at the highest rated seaside dining restaurants.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-3 mb-6 block">
+                    <img src="assets/images/logo.PNG" alt="DNP Tourism Logo"
+                        class="h-20 md:h-24 object-contain drop-shadow-lg">
+                </a>
+                <p class="text-sm mb-6">Experience the beautiful island of Sri Lanka with our premium luxury travel and
+                    tourism packages. We are your trusted travel hub.</p>
+                <div class="flex gap-4">
+                    <a id="link-facebook" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a id="link-instagram" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a id="link-twitter" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a id="link-whatsapp" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a id="link-linkedin" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                    <li><a href="destinations.html" class="hover:text-gold transition">Destinations</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">CEYLON</h4>
+                <ul class="space-y-3">
+                    <li><a href="destinations.html" class="hover:text-gold transition">Beautiful Tourist Places</a></li>
+                    <li><a href="cuisine.html" class="hover:text-gold transition">Sri Lankan Cuisine (Tasty Food)</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="hover:text-gold transition text-sm italic border-b border-gray-700 pb-1 mt-2 inline-block">Read
+                            More <i class="fa-solid fa-arrow-right text-xs ml-1"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">Contact Info</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-gold"></i>
+                        <span class="dyn-address">Colombo, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-gold"></i>
+                        <span class="dyn-phone1">+94 77 123 4567</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-gold"></i>
+                        <span class="dyn-email1">info@dnptourism.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-sm px-6 mt-16 border-t border-gray-800 pt-8">
+            <p>&copy; <span id="current-year"></span> DNP Tourism & Travel Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

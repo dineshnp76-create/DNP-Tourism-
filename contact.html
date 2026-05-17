@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DNP Tourism & Travel Hub</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#d4af37',
+                        goldDark: '#aa8529',
+                        brandBlue: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 text-white px-6 md:px-12 nav-scrolled"
+        style="background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/logo.PNG" alt="DNP Tourism Logo"
+                    class="h-12 md:h-16 object-contain drop-shadow-md">
+                <div class="flex flex-col justify-center">
+                    <span
+                        class="logo-text font-playfair text-2xl md:text-3xl font-black tracking-widest uppercase leading-none"
+                        style="color: #0f172a;">DNP</span>
+                    <span
+                        class="logo-text text-[9px] sm:text-[10px] font-bold tracking-[0.25em] uppercase text-gray-500 mt-1 leading-none">Tourism
+                        & Travel Hub</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Home</a>
+                <a href="destinations.html"
+                    class="hover:text-gold transition-colors pb-1 text-brandBlue">Destinations</a>
+                <a href="about.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">About Us</a>
+                <a href="contact.html" class="text-gold border-b-2 border-gold pb-1 text-brandBlue">Contact</a>
+                <a href="contact.html"
+                    class="btn-gold px-6 py-2 rounded-full text-white no-underline lowercase capitalize">Book Now</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden text-2xl focus:outline-none"
+                style="color: #0f172a;">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-brandBlue shadow-lg border-t border-gray-700">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="text-white hover:text-gold uppercase tracking-widest">Home</a>
+                <a href="destinations.html"
+                    class="text-white hover:text-gold uppercase tracking-widest">Destinations</a>
+                <a href="about.html" class="text-white hover:text-gold uppercase tracking-widest">About Us</a>
+                <a href="contact.html" class="text-gold font-semibold uppercase tracking-widest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-32 bg-brandBlue mt-20 relative">
+        <div
+            class="absolute inset-0 bg-[url('assets/images/yala_safari.png')] bg-cover bg-center bg-no-repeat opacity-20">
+        </div>
+        <div class="max-w-4xl mx-auto text-center px-6 relative z-10" data-aos="fade-up">
+            <h1 class="font-playfair text-5xl md:text-6xl text-white font-bold mb-4">Contact Us</h1>
+            <p class="text-gray-300 text-lg uppercase tracking-widest">Plan Your Dream Journey Today</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-24 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16">
+
+        <div data-aos="fade-right">
+            <h3 class="text-gold text-sm tracking-widest uppercase font-bold mb-3">Get In Touch</h3>
+            <h2 class="font-playfair text-4xl font-bold text-brandBlue mb-6">We're Here for You</h2>
+            <p class="text-gray-600 mb-10 leading-relaxed">Whether you want a curated luxury tour, a bespoke adventure
+                package, or have special requests, DNP Tourism & Travel Hub is ready to assist you. Contact us and let
+                the journey begin.</p>
+
+            <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                    <div
+                        class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-playfair text-xl font-bold text-brandBlue mb-1">Our Location</h4>
+                        <p class="text-gray-600 dyn-address">Level 5, World Trade Center,<br>Colombo 01, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div
+                        class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-playfair text-xl font-bold text-brandBlue mb-1">Email Address</h4>
+                        <p class="text-gray-600"><span class="dyn-email1">info@dnptourism.com</span><br><span
+                                class="dyn-email2">bookings@dnptourism.com</span></p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div
+                        class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-playfair text-xl font-bold text-brandBlue mb-1">Phone Number</h4>
+                        <p class="text-gray-600"><span class="dyn-phone1">+94 77 123 4567</span><br><span
+                                class="dyn-phone2">+94 11 987 6543</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl" data-aos="fade-left">
+            <h3 class="font-playfair text-2xl font-bold text-brandBlue mb-6">Send Us a Message</h3>
+            <form action="#" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                        <input type="text"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold bg-gray-50"
+                            placeholder="John">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                        <input type="text"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold bg-gray-50"
+                            placeholder="Doe">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                    <input type="email"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold bg-gray-50"
+                        placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                    <select
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold bg-gray-50">
+                        <option>Luxury Package Booking</option>
+                        <option>General Inquiry</option>
+                        <option>Custom Tour Request</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <textarea rows="4"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold bg-gray-50"
+                        placeholder="Tell us about your dream trip..."></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full btn-gold py-4 rounded-lg font-bold uppercase tracking-wider text-white">Send
+                    Inquiry</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-3 mb-6">
+                    <img src="assets/images/logo.PNG" alt="DNP Logo" class="h-16 object-contain drop-shadow-lg">
+                    <div class="flex flex-col justify-center text-left">
+                        <span
+                            class="font-playfair text-2xl font-bold text-white tracking-widest uppercase leading-none">DNP</span>
+                        <span
+                            class="text-[9px] font-bold tracking-[0.25em] uppercase text-gray-400 mt-1 leading-none">Tourism
+                            & Travel Hub</span>
+                    </div>
+                </a>
+                <p class="text-sm mb-6">Experience the beautiful island of Sri Lanka with our premium luxury travel and
+                    tourism packages. We are your trusted travel hub.</p>
+                <div class="flex gap-4">
+                    <a id="link-facebook" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a id="link-instagram" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a id="link-twitter" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a id="link-whatsapp" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a id="link-linkedin" href="#" target="_blank"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                    <li><a href="destinations.html" class="hover:text-gold transition">Destinations</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">CEYLON</h4>
+                <ul class="space-y-3">
+                    <li><a href="destinations.html" class="hover:text-gold transition">Beautiful Tourist Places</a></li>
+                    <li><a href="packages.html" class="hover:text-gold transition">Sri Lankan Cuisine (Tasty Food)</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="hover:text-gold transition text-sm italic border-b border-gray-700 pb-1 mt-2 inline-block">Read
+                            More <i class="fa-solid fa-arrow-right text-xs ml-1"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-playfair text-xl font-bold mb-6">Contact Info</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-gold"></i>
+                        <span class="dyn-address">Colombo, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-gold"></i>
+                        <span class="dyn-phone1">+94 77 123 4567</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-gold"></i>
+                        <span class="dyn-email1">info@dnptourism.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 md:px-12 mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; <span id="current-year"></span> DNP Tourism & Travel Hub. All rights reserved.</p>
+            <p>Designed with luxury in mind.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages | DNP Tourism & Travel Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { gold: '#d4af37', goldDark: '#aa8529', brandBlue: '#0f172a' } } } }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 text-white px-6 md:px-12 nav-scrolled"
+        style="background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/logo.png" alt="DNP Tourism Logo" class="h-16 md:h-20 object-contain drop-shadow-md">
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Home</a>
+                <a href="destinations.html"
+                    class="hover:text-gold transition-colors pb-1 text-brandBlue">Destinations</a>
+                <a href="packages.html" class="text-gold border-b-2 border-gold pb-1 text-brandBlue">Packages</a>
+                <a href="services.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Services</a>
+                <a href="about.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">About Us</a>
+                <a href="contact.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Contact</a>
+                <a href="contact.html"
+                    class="btn-gold px-6 py-2 rounded-full text-white no-underline lowercase capitalize">Book Now</a>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden text-2xl focus:outline-none"
+                style="color: #0f172a;"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-brandBlue shadow-lg border-t border-gray-700">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="text-white hover:text-gold uppercase tracking-widest">Home</a>
+                <a href="destinations.html"
+                    class="text-white hover:text-gold uppercase tracking-widest">Destinations</a>
+                <a href="packages.html" class="text-gold font-semibold uppercase tracking-widest">Packages</a>
+                <a href="services.html" class="text-white hover:text-gold uppercase tracking-widest">Services</a>
+                <a href="about.html" class="text-white hover:text-gold uppercase tracking-widest">About Us</a>
+                <a href="contact.html" class="text-white hover:text-gold uppercase tracking-widest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="h-[50vh] relative flex items-center justify-center bg-brandBlue mt-20">
+        <div
+            class="absolute inset-0 bg-[url('assets/images/yala_safari.png')] bg-cover bg-center bg-no-repeat opacity-40">
+        </div>
+        <div class="relative z-10 text-center px-4" data-aos="fade-up">
+            <h1 class="font-playfair text-5xl md:text-6xl text-white font-bold mb-4">Tour Packages</h1>
+            <p class="text-gray-300 text-lg uppercase tracking-widest">Curated Luxury Itineraries</p>
+        </div>
+    </section>
+
+    <!-- Packages Grid -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div id="dynamic-packages-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Packages will be generated here dynamically by javascript -->
+            </div>
+
+            <div class="mt-20 bg-brandBlue rounded-2xl p-10 text-center shadow-2xl relative overflow-hidden"
+                data-aos="zoom-in">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-gold opacity-10 rounded-full"></div>
+                <h3 class="font-playfair text-3xl text-white font-bold mb-4 relative z-10">Looking for a Custom
+                    Tailor-Made Tour?</h3>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto relative z-10">We specialize in designing bespoke
+                    itineraries tailored entirely around your passions, preferences, and pace. Let us create your unique
+                    journey.</p>
+                <a href="https://wa.me/94771234567" target="_blank"
+                    class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-full text-white font-bold uppercase tracking-widest relative z-10 inline-block transition"><i
+                        class="fa-brands fa-whatsapp mr-2 text-xl align-middle"></i> Request Custom Tour via
+                    WhatsApp</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] text-gray-400 py-10 border-t border-gray-800">
+        <div class="text-center text-sm px-6">
+            <p>&copy; <span id="current-year"></span> DNP Tourism & Travel Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

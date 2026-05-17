@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | DNP Tourism & Travel Hub</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#d4af37',
+                        goldDark: '#aa8529',
+                        brandBlue: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 text-white px-6 md:px-12 nav-scrolled"
+        style="background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/logo.png" alt="DNP Tourism Logo" class="h-16 md:h-20 object-contain drop-shadow-md">
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Home</a>
+                <a href="destinations.html"
+                    class="hover:text-gold transition-colors pb-1 text-brandBlue">Destinations</a>
+                <a href="about.html" class="text-gold border-b-2 border-gold pb-1 text-brandBlue">About Us</a>
+                <a href="contact.html" class="hover:text-gold transition-colors pb-1 text-brandBlue">Contact</a>
+                <a href="contact.html"
+                    class="btn-gold px-6 py-2 rounded-full text-white no-underline lowercase capitalize">Book Now</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden text-2xl focus:outline-none"
+                style="color: #0f172a;">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-brandBlue shadow-lg border-t border-gray-700">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="text-white hover:text-gold uppercase tracking-widest">Home</a>
+                <a href="destinations.html"
+                    class="text-white hover:text-gold uppercase tracking-widest">Destinations</a>
+                <a href="about.html" class="text-gold font-semibold uppercase tracking-widest">About Us</a>
+                <a href="contact.html" class="text-white hover:text-gold uppercase tracking-widest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="h-[60vh] relative flex items-center justify-center bg-brandBlue mt-20">
+        <div class="absolute inset-0 bg-[url('assets/images/hero_bg.png')] bg-cover bg-center bg-no-repeat opacity-30">
+        </div>
+        <div class="relative z-10 text-center px-4" data-aos="zoom-in">
+            <h1 class="font-playfair text-5xl md:text-7xl text-white font-bold mb-4">Our Story</h1>
+            <p class="text-gray-300 text-lg uppercase tracking-widest">Redefining Luxury Travel in Sri Lanka</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-24 max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h3 class="text-gold text-sm tracking-widest uppercase font-bold mb-3">Who We Are</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-brandBlue mb-6">DNP Tourism & Travel Hub
+                </h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Founded with a passion to showcase the unparalleled beauty of Sri Lanka, DNP Tourism is expanding
+                    the boundaries of luxury travel. We exist to provide immersive, high-end travel experiences that
+                    cater strictly to those who demand excellence and exclusivity.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    From 5-star colonial boutique hotels in the tea country to exclusive private safaris in Yala, our
+                    extensive network spans the entire island. We combine local expertise with international standards
+                    of hospitality.
+                </p>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-gold">
+                        <h4 class="text-4xl font-playfair font-bold text-brandBlue mb-2">10+</h4>
+                        <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Years Experience</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-gold">
+                        <h4 class="text-4xl font-playfair font-bold text-brandBlue mb-2">5K+</h4>
+                        <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative" data-aos="fade-left">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="assets/images/mirissa_beach.png" alt="Travel"
+                        class="rounded-xl h-64 object-cover w-full shadow-lg transform translate-y-8">
+                    <img src="assets/images/ella_train.png" alt="Travel"
+                        class="rounded-xl h-64 object-cover w-full shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0b1120] text-gray-400 py-10 border-t border-gray-800">
+        <div class="text-center text-sm px-6">
+            <p>&copy; <span id="current-year"></span> DNP Tourism & Travel Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/data-loader.js"></script><script src="js/main.js"></script>
+</body>
+
+</html>
+
+
