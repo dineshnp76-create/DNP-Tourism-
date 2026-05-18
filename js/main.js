@@ -6,7 +6,24 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true,
         offset: 100
     });
+    
+function showNotification(message) {
+  const liveRegion = document.getElementById("liveNotification");
 
+  // Clear first
+  liveRegion.textContent = "";
+
+  // Small delay is IMPORTANT
+  setTimeout(() => {
+    liveRegion.textContent = message;
+    liveRegion.classList.add("show");
+
+    setTimeout(() => {
+      liveRegion.classList.remove("show");
+    }, 4000);
+
+  }, 150);
+}
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     if (navbar) {
