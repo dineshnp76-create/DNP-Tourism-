@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         offset: 100
     });
     
-function showNotification(message) {
+function showNotification(                                placeholder="Welcome to DNP Tourism — Experience Luxury Travel Across Sri Lanka, 🏖️ Explore Beaches, Wildlife & Cultural Wonders with Personalized Tours.
+) {
   const liveRegion = document.getElementById("liveNotification");
 
   // Clear first
