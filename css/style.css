@@ -30,6 +30,7 @@ live-region {
 live-region.show {
   opacity: 1;
 }
+
 /* Glassmorphism Classes */
 .glass {
     background: rgba(255, 255, 255, 0.15);
