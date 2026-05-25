@@ -198,11 +198,11 @@ function saveContactDetails() {
 
 function saveSocialDetails() {
     const data = {
-        facebook: document.getElementById('facebook').value,
-        instagram: document.getElementById('instagram').value,
+        facebook: document.getElementById('https://web.facebook.com/profile.php?id=61590285980364').value,
+        instagram: document.getElementById('https://www.instagram.com/dperera1976/').value,
         twitter: document.getElementById('twitter').value,
-        whatsapp: document.getElementById('whatsapp').value,
-        linkedin: document.getElementById('linkedin').value
+        whatsapp: document.getElementById('https://call.whatsapp.com/voice/pnfuAtxuvX6CYRHDfN8jU7').value,
+        linkedin: document.getElementById('linkedin.com/in/dinesh-n-perera-596741395').value
     };
     localStorage.setItem('dnpSocialData', JSON.stringify(data));
     showSaveStatus();
