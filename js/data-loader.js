@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (rawSocial) {
         const data = JSON.parse(rawSocial);
-        updateLink('#link-facebook', data.facebook);
+        updateLink('#https://web.facebook.com/profile.php?id=61590285980364-facebook', data.facebook);
         updateLink('#link-instagram', data.instagram);
         updateLink('#link-twitter', data.twitter);
         updateLink('#link-whatsapp', data.whatsapp);
-        updateLink('#link-linkedin', data.linkedin);
+        updateLink('#https://www.instagram.com/dperera1976/-linkedin', data.linkedin);
         waLink = data.whatsapp || waLink;
     } else {
         if (rawContact) waPhone = JSON.parse(rawContact).phone1.replace(/\D/g, '');
