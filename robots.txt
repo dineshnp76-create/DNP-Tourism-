@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dineshnp76-create.github.io/DNP-Tourism-/sitemap.xml
